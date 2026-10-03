@@ -15,5 +15,5 @@ A modular production skill suite for OpenAI Codex, Claude Code, and ChatGPT enab
 
 ### Via Codex CLI
 ```bash
-codex plugin marketplace add <YourGitHubUsername>/nutshell-studio
+codex plugin marketplace add sharangbakshi/nutshell-studio
 codex plugin add nutshell-studio@nutshell-studio
