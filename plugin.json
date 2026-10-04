@@ -1,0 +1,28 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "nutshell-studio",
+  "version": "1.2.0",
+  "description": "Explicitly invoked skills for researched educational scripts, Cosmic Curiosity art direction, meaningful motion, and narration-aligned production blueprints.",
+  "author": {
+    "name": "Sharang Bakshi",
+    "url": "https://github.com/sharangbakshi"
+  },
+  "repository": "https://github.com/sharangbakshi/nutshell-studio",
+  "keywords": ["education", "science", "storytelling", "storyboard", "animation"],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Nutshell Studio",
+        "shortDescription": "Science stories in motion",
+        "longDescription": "Plan original educational films with sourced scripts, coherent art direction, timed visual actions, and practical production handoffs. Four explicit-only skills. Produces writing and production specifications by default; media generation requires separately available tools and a request to use them.",
+        "developerName": "Sharang Bakshi",
+        "category": "Productivity",
+        "capabilities": ["Research and scripting", "Art direction", "Motion planning", "Production blueprints"],
+        "websiteURL": "https://github.com/sharangbakshi/nutshell-studio",
+        "brandColor": "#0B0F2A",
+        "composerIcon": "./assets/icon.svg",
+        "logo": "./assets/icon.svg"
+      }
+    }
+  }
+}

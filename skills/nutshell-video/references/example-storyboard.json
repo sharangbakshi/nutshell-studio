@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "project_title": "One Gate, Growing Queue — illustrative storyboard fixture",
+  "example_status": "Original fictional model with estimated timing; not user-approved, rendered, or production-reviewed.",
+  "timing": {
+    "status": "estimated",
+    "audio_source": "No recording exists; narration is illustrative text for a contract example.",
+    "audio_duration_seconds": 18,
+    "basis": "Three provisional six-second shots. Boundaries are chosen for demonstration, not measured speech. Re-align after recording."
+  },
+  "duration_limit_seconds": 20,
+  "assets": [
+    {
+      "id": "gate-design",
+      "kind": "layered-vector",
+      "status": "planned",
+      "source": "Planned original teal gate with a single circular aperture; no asset file exists."
+    },
+    {
+      "id": "token-design",
+      "kind": "layered-vector",
+      "status": "planned",
+      "source": "Planned coral tokens, visually distinct from the teal gate; no asset file exists."
+    }
+  ],
+  "claims": [
+    {
+      "id": "queue-rule",
+      "statement": "In this invented model, two tokens arrive and one leaves per beat, so the waiting count increases by one per beat after each complete update.",
+      "status": "illustrative",
+      "sources": [],
+      "qualification": "Constructed arithmetic example with an unlimited waiting area and identical tokens; not a measured traffic system or general claim about all queues."
+    }
+  ],
+  "shots": [
+    {
+      "id": "shot-01",
+      "sequence_id": "queue-introduction",
+      "start": 0,
+      "end": 6,
+      "narration": {
+        "kind": "spoken",
+        "text": "Imagine a gate that lets one token through each beat."
+      },
+      "visual_purpose": "Establish the invented gate's single-token service rule before introducing congestion.",
+      "asset_ids": ["gate-design", "token-design"],
+      "claim_ids": ["queue-rule"],
+      "incoming_state": "Wide navy field; gate centered; a single coral token waits immediately to its left.",
+      "outgoing_state": "Gate stays centered after one token has passed right; the demonstration resets to an empty waiting area.",
+      "transition": "Keep the gate fixed in position and scale; introduce a paired token supply from the left.",
+      "events": [
+        {
+          "start": 0,
+          "end": 2,
+          "action": "Reveal the gate and aperture; direct attention to its opening with a brief size pulse.",
+          "narration_cue": "Imagine a gate"
+        },
+        {
+          "start": 2,
+          "end": 6,
+          "action": "At a visible beat marker, open the aperture and move exactly one token through; close it and clear the demonstration token off-screen.",
+          "narration_cue": "lets one token through each beat"
+        }
+      ]
+    },
+    {
+      "id": "shot-02",
+      "sequence_id": "queue-introduction",
+      "start": 6,
+      "end": 12,
+      "narration": {
+        "kind": "spoken",
+        "text": "Now send two tokens to the gate on every beat."
+      },
+      "visual_purpose": "Change only the arrival rule so the viewer can see why the waiting area begins to fill.",
+      "asset_ids": ["gate-design", "token-design"],
+      "claim_ids": ["queue-rule"],
+      "incoming_state": "Gate in the same position; waiting area empty; paired coral tokens are visible upstream.",
+      "outgoing_state": "After two complete updates, two tokens wait at the gate; two have exited right.",
+      "transition": "Retain every token's identity and position; reveal a waiting-count label alongside the existing queue.",
+      "events": [
+        {
+          "start": 6,
+          "end": 9,
+          "action": "Bring in two tokens, then pass one through the gate; leave one visibly waiting. Highlight the arrival pair together before highlighting the single departure.",
+          "narration_cue": "Now send two tokens to the gate"
+        },
+        {
+          "start": 9,
+          "end": 12,
+          "action": "Repeat one complete update: two arrive, one departs, leaving two waiting. Keep the gate's opening capacity unchanged.",
+          "narration_cue": "on every beat"
+        }
+      ]
+    },
+    {
+      "id": "shot-03",
+      "sequence_id": "queue-introduction",
+      "start": 12,
+      "end": 18,
+      "narration": {
+        "kind": "spoken",
+        "text": "The line grows by one token each beat: two arrive, one leaves."
+      },
+      "visual_purpose": "Connect the visible growing queue to the arithmetic difference without adding a new mechanism.",
+      "asset_ids": ["gate-design", "token-design"],
+      "claim_ids": ["queue-rule"],
+      "incoming_state": "Two tokens wait at the unchanged gate; waiting-count label reads 2.",
+      "outgoing_state": "Three tokens wait; label reads 3; arrival pair and departure path remain visible for comparison.",
+      "transition": "End on the resolved relationship with a deliberate short comprehension hold; no claim of a rendered ending.",
+      "events": [
+        {
+          "start": 12,
+          "end": 15,
+          "action": "Perform the next update while the counter changes from 2 to 3. Add a compact 2 in / 1 out comparison near the corresponding paths.",
+          "narration_cue": "The line grows by one token each beat"
+        },
+        {
+          "start": 15,
+          "end": 17,
+          "action": "Highlight the two-token arrival marker and then the one-token departure marker in spoken order, without creating extra arrivals or departures.",
+          "narration_cue": "two arrive, one leaves"
+        },
+        {
+          "start": 17,
+          "end": 18,
+          "action": "Hold the three waiting tokens and the difference label still for one estimated second so the completed comparison can be read.",
+          "narration_cue": "Intentional comprehension pause after the sentence."
+        }
+      ]
+    }
+  ]
+}
